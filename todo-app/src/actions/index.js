@@ -1,11 +1,11 @@
-const ADD_TODO = 'ADD_TODO';
+const ADD_TODO = "ADD_TODO";
 export const addTodo = (message) => ({
-    type:ADD_TODO,
-    payload: message,
-    id:Math.random(),
+  type: ADD_TODO,
+  message: message,
+  id: Math.random(),
 });
-const DELETE_TODO = 'DELETE_TODO';
+const DELETE_TODO = "DELETE_TODO";
 export const deleteTodo = (id) => ({
-    type:DELETE_TODO,
-    id,
+  type: DELETE_TODO,
+  id,
 });
